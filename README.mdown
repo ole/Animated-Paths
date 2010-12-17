@@ -1,0 +1,8 @@
+# Animated Paths for iPad
+
+Animating the drawing of a `CGPath` with the help of `CAShapeLayer.strokeEnd`.
+
+
+## Blog post
+
+See http://oleb.net/ for details
