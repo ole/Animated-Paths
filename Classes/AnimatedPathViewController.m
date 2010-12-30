@@ -170,14 +170,14 @@
     pathAnimation.duration = 10.0;
     pathAnimation.fromValue = [NSNumber numberWithFloat:0.0f];
     pathAnimation.toValue = [NSNumber numberWithFloat:1.0f];
-    [self.pathLayer addAnimation:pathAnimation forKey:@"strokeEndAnimation"];
+    [self.pathLayer addAnimation:pathAnimation forKey:@"strokeEnd"];
     
     CAKeyframeAnimation *penAnimation = [CAKeyframeAnimation animationWithKeyPath:@"position"];
     penAnimation.duration = 10.0;
     penAnimation.path = self.pathLayer.path;
     penAnimation.calculationMode = kCAAnimationPaced;
     penAnimation.delegate = self;
-    [self.penLayer addAnimation:penAnimation forKey:@"penAnimation"];
+    [self.penLayer addAnimation:penAnimation forKey:@"position"];
 }
 
 
